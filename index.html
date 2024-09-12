@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ІС-33</title>
+    <link rel="icon" type="image/x-icon" href="images\favicon.ico">
+    <style >
+       body {
+        background-image: url('images/everest.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        } 
+        a:link, a:visited {
+          background-color: #f44336;
+          color: white;
+          padding: 15px 25px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+        }
+        
+        a:hover, a:active {
+          background-color: red;
+        }
+        table, th, td {
+            border: 3px solid rgb(163, 53, 53);
+            border-collapse: collapse;
+            border-radius: 10px;
+            border-style: dotted;
+        }
+        td {
+            background-color: #96D4D4;
+            padding-left: 138px ;
+        }
+        th{
+            background-color: teal;
+            
+        }
+        tr:nth-child(even) {
+            background-color: rgba(150, 212, 212, 0.4);
+        }
+
+        th:nth-child(even),td:nth-child(even) {
+            background-color: rgba(150, 212, 212, 0.4);
+        }
+        </style>
+    
+
+       
+</head>
+
+<body>
+   <h1>Заголовок</h1>
+    <p>параграф щось писати</p>
+    <a href="https://w3schoolsua.github.io/html/html_attributes.html" target="_parent">посилання</a>
+    <img src="images\favicon.ico.jpg" width="256" height="192" alt="Красива дівчинка">
+    <p style="color:red">Це параграф червоного кольору.</p>
+    <p title='я підсказка до параграфу'>привіт світ</p>
+    <p>цей парграф має розрив тут<br>як я і сказав</p>
+    <pre>пробіл            розрив
+        розрив   3 пробіли
+            все
+    </pre>
+    <a href="https://www.w3schools.com/html/" target="_blank">HTML уроки для початківців онлайн</a>
+    <a href="images\123.png" target="_top">HTML Зображення</a>
+    <a href="https://w3schoolsua.github.io/html/html_links.html#gsc.tab=0" target="_blank" title="перейти на роз'яснення посилань">
+        <img src="images\Без названия.png" alt="HTML уроки для початківців" style="width:42px;height:42px;border:0;">
+    </a>
+    <h2 id="C4">Розділ 4</h2>
+    <a href="#C4">Перейти до розділу 4</a>
+    <a href="http://127.0.0.1:5500/index.html#C4">Перейти до розділу 4</a>
+    <style>
+        div {
+          background-image: url('images/everest2.jfif');
+          background-repeat: no-repeat ;
+        }
+      
+        </style>
+        <body>
+        
+        <h2>Зображення в якості фону</h2>
+        
+        <div>
+        Ви можете вказати фонові зображення<br>
+        для будь-якого видимого елемента HTML.<br>
+        У цьому прикладі фонове зображення<br>
+        вказано для елемента div.<br>
+        За замовчуванням фонове зображення<br>
+        повториться в напрямку (ях)<br>
+        де воно менше елемента<br>
+        в якому воно зазначено.<br>
+        (Спробуйте змінити розмір<br>
+        вікна браузера, щоб побачити, як<br>
+        фонове зображення поводиться.
+        </div>
+        <picture>
+            <source srcset="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa9fk1nU0kxBrgMkSxEeXkszeMH887rbLjtA&s">
+            <source srcset="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0Jf3uKd-O97YnW6UL46sUPMPubm1IeBV_-g&s">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ9__WpQnbyICCiEljL5_UpCZdDNAbZNiq-w&s" alt="Beatles" style="width:auto;">
+          </picture>
+          <p>картинки </p>
+        
+       
+        <h2 style="color: aqua;">списки ////</h2>
+        <ul style="color: burlywood;">
+            <li>coffe</li>
+            <li>cola</li>
+            <li>tea</li>
+        </ul>
+        <h2 style="color: aqua;">списки 123</h2>
+        <ol style="color: aquamarine;">
+            <li>coffe</li>
+            <li>cola</li>
+            <li>tea</li>
+        </ol>
+    <table style="width:100%">
+        <tr>
+            <th>cars</th>
+             <th>name</th>
+            <th>year</th>
+        </tr>
+        <tr>
+            <td>bmw</td>
+            <td>m5</td>
+            <td>2019</td>
+        </tr>
+        <tr>
+            <td>fiat</td>
+            <td>linea</td>
+            <td>2009</td>
+        </tr>
+            
+    </table>
+    <form style='color: #f44336;' action="https://docs.google.com/document/d/1U_EF3HB8TivS8eg_sMx1NxIa8A4lXcKh36VvhFiu9sI/edit" target="_blank">
+        <fieldset>
+            <legend>Особиста інформація:</legend>
+            Ім’я:<br>
+            <input type='text' name='firstname' value='Mickey'><br>
+            Прізвище:<br>
+            <input type='text' name='lastname' value='Mouse'><br><br>
+            <input type='radio' name='gender' value='male' checked> Чоловіча<br>
+            <input type='radio' name='gender' value='female'> Жіноча<br>
+            <input type='radio' name='gender' value='other'> Інше
+            <input type='submit' value='Надіслати'>
+          </fieldset>
+         
+    </form>
+</body>
+</html>
